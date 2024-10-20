@@ -1,0 +1,25 @@
+@import '../styles/mixins';
+.footer{
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    margin-top: -10px;
+    background: rgb(56 18 71);
+// background: -moz-linear-gradient(180deg, rgba(125,76,149,1) 0%, rgba(0,0,0,1) 100%);
+// background: -webkit-linear-gradient(180deg, rgba(125,76,149,1) 0%, rgba(0,0,0,1) 100%);
+// background: linear-gradient(180deg, rgba(125,76,149,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d4c95",endColorstr="#000000",GradientType=1);
+}
+.footer__icon{
+    width: 45px;
+
+}
+.layer__one{
+    
+    align-items: center;
+    // @include media('max','sm'){
+    //     display: block;
+               
+    // }
+}
+

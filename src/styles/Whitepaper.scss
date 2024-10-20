@@ -1,0 +1,36 @@
+
+.forBg{
+    background-color: rgb(56 18 71);
+}
+.lore{
+    padding: 100px 0 100px 0;
+    flex-grow: 1;
+    // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e0aa15, 0 0 30px #e0aa15, 0 0 40px #e0aa15;
+    // text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1);
+   
+    // text-shadow: 
+    // 0 0 3px rgba(255, 255, 255, 0.6), 
+    // 0 0 6px rgba(255, 255, 255, 0.5), 
+    // 0 0 9px rgba(255, 255, 255, 0.4), 
+    // 0 0 12px rgba(224, 153, 21, 0.2), 
+    // 0 0 18px rgba(236, 165, 11, 0.2), 
+    // 0 0 24px rgba(241, 140, 9, 0.2);
+
+
+
+}   
+
+.sup_txt6::after{
+    position: absolute;
+    background-image: url('../assets/Vector 35.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    height: 30rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+}

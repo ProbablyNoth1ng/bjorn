@@ -1,0 +1,222 @@
+
+@import 'mixins';
+.nav{
+    z-index: 20;
+    // background-color: black;
+    width: 100%;
+   top: 0;
+    left: 0;
+   position: fixed;
+   background: rgb(0,0,0);
+   background: -moz-linear-gradient(180deg, rgba(0,0,0,0.8155637254901961) 7%, rgba(255,255,255,0) 100%);
+   background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.8155637254901961) 7%, rgba(255,255,255,0) 100%);
+   background: linear-gradient(180deg, rgba(0,0,0,0.8155637254901961) 7%, rgba(255,255,255,0) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+   
+}
+.nav__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.nav__inner > *{
+    margin: 0 20px;
+    @include media('max','lg'){
+        margin: 0 15px;
+        
+    }
+}
+.anim{
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.logo{
+    width: 90px;
+    @include media('max','sm'){
+        width: 60px;
+    }
+}
+
+.links{
+    margin: 0 !important;
+}
+.links > li{
+    color: black !important;
+}
+@include media('max','lg'){
+    
+ 
+
+      .menu-button {
+
+        cursor: pointer;
+        position: relative;
+        width: 20px;
+        height: 2px;    
+        background-color: white;
+       
+      }
+     
+ 
+      
+     
+      .nav_link{
+        margin: 0 auto;
+        
+      }
+      .nav__inner {
+        width: 100%;
+        
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+    }
+    
+    .burger-menu {
+        height: 100%;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .visible {
+        display: inherit;
+    }
+ 
+
+
+
+
+    .burger_Menu{
+        width: 35px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        z-index: 5;
+    }
+    .burger_Menu span,
+    .burger_Menu::before,
+    .burger_Menu::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 1s ease 0s;
+        background-color: white;
+        
+    }
+    .burger_Menu::before,
+    .burger_Menu::after{
+        content: "";
+    }
+    .burger_Menu::before{
+        top: 0;
+    }
+    .burger_Menu::after{
+        bottom: 0;
+    }
+    .burger_Menu span {
+        top: 50%;
+        transform: scale(1) translate(0px,-50%);
+    }
+
+    .bg.opened{
+        
+        .nav{
+            background-color: transparent;
+            box-shadow: none;
+            height: inherit;
+        }
+        .nav__inner{
+          
+        }
+        .logo{
+            visibility: hidden;
+        }
+        .burger_Menu.opened{
+            position: absolute;
+            top: 2%;
+            left: 95%;
+            transform: translate(-90%, 0%);
+        }
+    }
+    
+    .burger_Menu.opened span{
+        transform: scale(0) translate(0px,-50%);
+    }
+    .burger_Menu.opened::before{
+        top:50%;
+        transform: rotate(-45deg) translate(0px,-50%);
+        
+    }
+    .burger_Menu.opened::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px,50%);
+       
+    }
+    .bg{
+       
+    }
+    .links{
+        flex-direction: column;
+        position: relative;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        flex-direction: column;
+       
+        text-align: center;
+    }
+    .links__body {
+        flex-direction: column;
+    
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        justify-items: center;
+        transform: translate(300%,0);
+        transition: all 0.7s ease-in-out 0s;
+        margin:  0;
+        left: 0;
+        top: 0;
+
+      }
+      
+    .links__body.opened{
+     
+        background-color: darken(olive,12%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: translate(0,0);
+        transition: all 0.7s ease-in-out 0s;
+        z-index: 5;
+       
+        .links{
+         
+            z-index: 5;
+            position: absolute;
+            display: flex !important;
+
+         
+  
+        }
+        // .link{
+        //     padding: 5px 0;
+        // }
+      
+      
+    }
+
+}
