@@ -14,7 +14,7 @@ export default function Header(){
                     <p className="uppercase text-6xl font-bold hero max-lg:text-4xl max-md:text-3xl max-xs:text-xl title Montserrat shad">AWAKE TO OPPORTUNITIES</p>
                     <img src={onPepe} alt="" className="header__img" />
                     <div className="desc__container text-xl max-sm:text-sm">
-                    From Viral Sensation to Meme Icon — Join the #BJORNARMY & Make History!
+                    From Viral Sensation to Meme Icon. CA - <span className="ca text-xl max-md:text-sm max-sm:text-xs">FoTGRd5Q4uqoUqmXiePquqPiy5jmUAftKV1aDxHSpump</span> 
                     </div>
                 </div>
                 

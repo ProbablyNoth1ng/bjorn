@@ -50,7 +50,7 @@ export default function Nav(){
                     <ul className='links flex'>
                             
                             <li className={`link text-2xl font-bold uppercase px-3 ${!isInitialRender ? '' : "anim" }`}> <Link to="/">Home </Link></li>
-                            <li className={`link text-2xl font-bold uppercase px-3 ${!isInitialRender ? '' : "anim" }`}> <HashLink smooth to="/#about">How to buy</HashLink></li>
+                            <li className={`link text-2xl font-bold uppercase px-3 ${!isInitialRender ? '' : "anim" }`}> <HashLink smooth to="/#about">About</HashLink></li>
                             <li className={`link text-2xl font-bold uppercase px-3 ${!isInitialRender ? '' : "anim" }`}> <HashLink smooth to="/#htb">How to buy</HashLink></li>
                             <li className={`link text-2xl font-bold uppercase px-3 ${!isInitialRender ? '' : "anim" }`}>  <HashLink smooth to="/#faq">Faq</HashLink></li>
                             <li className={`link text-2xl font-bold uppercase px-3 ${!isInitialRender ? '' : "anim" }`}> <Link to="/Whitepaper">Lore </Link></li>
@@ -82,7 +82,7 @@ export default function Nav(){
                         <div className={`links__body ${clicked ? 'opened' : ''}`}>
                             <ul className='links flex '>
                                     <li className='link  font-bold uppercase px-3 link text-8xl max-md:text-7xl max-sm:text-5xl max-xs:text-4xl ' onClick={updateMenu}> <Link to="/">Home </Link></li>
-                                    <li className={`link font-bold uppercase px-3 link text-8xl max-md:text-7xl max-sm:text-5xl max-xs:text-4xl ${!isInitialRender ? '' : "anim" }`} onClick={updateMenu}>  <HashLink smooth to="/#about">How to buy</HashLink></li>
+                                    <li className={`link font-bold uppercase px-3 link text-8xl max-md:text-7xl max-sm:text-5xl max-xs:text-4xl ${!isInitialRender ? '' : "anim" }`} onClick={updateMenu}>  <HashLink smooth to="/#about">About</HashLink></li>
                                     <li className={`link font-bold uppercase px-3 link text-8xl max-md:text-7xl max-sm:text-5xl max-xs:text-4xl ${!isInitialRender ? '' : "anim" }`} onClick={updateMenu}> <HashLink smooth to="/#htb">How to buy</HashLink></li>
                                     <li className={`link font-bold uppercase px-3 link text-8xl max-md:text-7xl max-sm:text-5xl max-xs:text-4xl ${!isInitialRender ? '' : "anim" }`} onClick={updateMenu}>  <HashLink smooth to="/#faq">Faq</HashLink></li>
                                     <li className={`link font-bold uppercase px-3 link text-8xl max-md:text-7xl max-sm:text-5xl max-xs:text-4xl ${!isInitialRender ? '' : "anim" }`} onClick={updateMenu}> <Link to="/Whitepaper">Lore </Link></li>
