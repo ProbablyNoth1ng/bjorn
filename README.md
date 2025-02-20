@@ -1,8 +1,58 @@
-# React + Vite
+# Bjorn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Bjorn** is a web application built using React, JavaScript and Vite
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (version 14.x or later)
+- [npm](https://www.npmjs.com/) (comes with Node.js) or [Yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/ProbablyNoth1ng/bjorn.git
+   ```   
+2. **Navigate to the Project Directory**
+
+   ```bash
+   cd bjorn
+   ```
+
+4. **Install Dependencies**
+    
+    ```bash
+   npm install 
+    ```
+    or
+   ```bash
+    yarn install
+    ```
+
+6. **Running the Project**
+    
+    ```bash
+    npm run dev
+   ```
+    or
+   ```bash
+     yarn dev
+   ```
+
+8. **Building for Production**
+    
+    ```bash
+    npm run build 
+   ```
+    or
+   ```bash
+   yarn build
+   ```
+
+
+
+
